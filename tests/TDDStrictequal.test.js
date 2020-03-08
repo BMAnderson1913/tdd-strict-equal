@@ -6,14 +6,12 @@ const strictEquals = require('../TDDStrictequal')
 describe('TDDStrictEqual', () => {
   describe('strictEquals', () => {
     it('Returns true if two values are INEQUAL in TYPE and VALUE', () => {
-      //create test data
+
       const valNumOne = 3
       const valNumTwo = 'b'
 
-      //call the function using the test data
       const endresult = strictEquals(valNumOne, valNumTwo)
 
-      //make assertions about what should be true
       expect(endresult).to.not.equal(true)
     })
     it('Returns true if two values are EQUAL in VALUE but INEQUAL in TYPE', () => {
